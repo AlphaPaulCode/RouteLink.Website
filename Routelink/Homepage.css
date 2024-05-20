@@ -75,20 +75,25 @@
 }
 .third-bar {
     position: relative;
+    height: 500px; /* Adjust height as needed */
 }
 .background-image {
     position: relative;
+    width: 100%;
+    height: 100%;
     color: #F2F2F3;
-    
+    overflow: hidden; /* Ensure contents do not overflow */
 }
 .background-image img {
-    position: relative;
+    display: none; /* Hide all images initially */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
     filter: brightness(60%); /* Adjust brightness to make the image darker */
+    object-fit: cover; /* Ensure image covers the area */
 }
 .background-image h1,
 .background-image h3,
