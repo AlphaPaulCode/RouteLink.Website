@@ -38,40 +38,41 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 98.7%; /* Ensure it spans the full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
     position: absolute; /* Make the second-bar a positioning context */
     z-index: 1; /* Ensure the second-bar is above the third-bar */
 }
+.logo-image {
+    max-height: 50px; /* Adjust as needed */
+    width: auto;
+}
 .navigation {
     display: flex;
-    
-    gap: 30px; /* Adjust the space between links as needed */
-    margin-left: 100px;
+    gap: 15px; /* Space between nav items */
 }
 .navigation a {
-    color: #F2F2F3;
+    color: #fff;
     text-decoration: none;
-    font-size: 20px; /* Adjust font size as needed */
+    padding: 5px 10px;
+    transition: background-color 0.3s;
 }
-.navigation a:hover{
-    text-decoration: underline;
+.navigation a:hover {
     background-color: #F15A24;
+    border-radius: 5px;
 }
 .contact-info {
     display: flex;
-    margin-left: 270px;
+    align-items: center;
 }
-.contact-info img{
-    width: 30px;
-    height: auto;
+.contact-info img {
+    max-height: 30px; /* Adjust as needed */
+    width: auto;
+    margin-right: 10px;
 }
-.contact-details {
-    margin-right: 20px; /* Adjust as needed */
-}
-.contact-details p {
-    margin-bottom: 5px;
-}
-.contact-details h3 {
-    margin-top: 0;
+.contact-details p, .contact-details h3 {
+    margin: 0;
+    color: #fff;
 }
 .third-bar {
     position: relative;
