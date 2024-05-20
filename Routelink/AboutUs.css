@@ -172,13 +172,15 @@
     margin-top: -450px;
 }
 
-.fifth-bar h4{
+.fifth-bar h4 {
     margin-top: 90px;
     margin-left: 70px;
 }
-.fifth-bar h1{
+
+.fifth-bar h1 {
     margin-left: 70px;
 }
+
 .managers {
     display: flex;           /* Use flexbox to align images in a row */
     justify-content: center; /* Center the images horizontally */
@@ -187,13 +189,46 @@
     margin: 20px 0;          /* Optional: add some margin above and below the container */
 }
 
-.managers img {
-    width: 250px;    /* Adjust the width to the desired size */
-    height: auto;    /* Maintain the aspect ratio */
-    object-fit: cover;  /* Ensure images cover the area without distortion */
-    border-radius: 5px; /* Optional: add rounded corners */
+.manager {
+    position: relative;
+    width: 250px;           /* Adjust the width to the desired size */
+    height: auto;           /* Maintain the aspect ratio */
+}
+
+.manager img {
+    width: 100%;            /* Full width of the parent container */
+    height: auto;           /* Maintain the aspect ratio */
+    object-fit: cover;      /* Ensure images cover the area without distortion */
+    border-radius: 5px;     /* Optional: add rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
 }
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease; /* Smooth transition */
+    border-radius: 0 0 5px 5px; /* Match the border radius of the image */
+}
+
+.manager:hover .overlay {
+    height: 100%; /* Expand the overlay to cover the whole image */
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+}
+
 .custom-hr {
     border: none; /* Remove default border */
     height: 2px;  /* Set the height of the line */
@@ -204,34 +239,69 @@
 .partners {
     text-align: center;
     padding: 50px 20px;
-  }
-  
-  .partners-heading {
+}
+
+.partners-heading {
     color: #f15a24; /* Orange color for "Partners" */
     font-size: 24px;
     margin-bottom: 10px;
-  }
-  
-  .partners h2 {
+}
+
+.partners h2 {
     font-size: 48px;
     color: #000000;
     margin: 0;
-  }
-  
-  .partners-grid {
+}
+
+.partners-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     max-width: 1200px;
     margin: 40px auto;
-  }
-  
-  .partner-logo img {
+    position: relative;
+    overflow: hidden;
+}
+
+.partner-logo img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-  }
+}
+
+.top-row {
+    animation: moveRight 30s linear infinite;
+}
+
+.bottom-row {
+    animation: moveLeft 30s linear infinite;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .footer {
     background-color: #212121;
     color: #ffffff;
