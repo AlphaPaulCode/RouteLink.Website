@@ -60,6 +60,10 @@
     display: flex;
     margin-left: 270px;
 }
+.contact-info img{
+    width: 30px;
+    height: auto;
+}
 .contact-details {
     margin-right: 20px; /* Adjust as needed */
 }
