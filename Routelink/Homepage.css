@@ -38,9 +38,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 98.7%; /* Ensure it spans the full width */
+    width: 100%; /* Ensure it spans the full width */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    position: absolute; /* Make the second-bar a positioning context */
+    position: relative; /* Make the second-bar a positioning context */
     z-index: 1; /* Ensure the second-bar is above the third-bar */
 }
 .logo-image {
