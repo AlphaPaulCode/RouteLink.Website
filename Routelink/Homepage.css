@@ -33,7 +33,7 @@
     height: auto; /* Let the height adjust automatically to maintain aspect ratio */
   }
   .second-bar {
-    background-color: rgba(77, 74, 79, 0.7); /* Grey transparent color */
+    background-color: rgba(77, 74, 79, 0.7); /* Adjust transparency with the alpha value (0.0 to 1.0) */
     padding: 10px;
     display: flex;
     justify-content: space-between;
