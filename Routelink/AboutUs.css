@@ -86,7 +86,7 @@
     max-height: 300px;
     object-fit: cover; 
     z-index: -1;
-    filter: brightness(60%);
+    filter: brightness(30%);
 }
 
 .background-image h1 {
