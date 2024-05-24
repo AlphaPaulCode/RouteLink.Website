@@ -254,8 +254,11 @@
   }
   
   .social-icons a {
+    color: #F2F2F3;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 20px; 
     display: inline-block;
-    margin-right: 10px;
   }
   
   .social-icons img {
