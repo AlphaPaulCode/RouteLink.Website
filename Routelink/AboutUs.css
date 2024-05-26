@@ -86,7 +86,7 @@
     max-height: 300px;
     object-fit: cover; 
     z-index: -1;
-    filter: brightness(60%);
+    filter: brightness(30%);
 }
 
 .background-image h1 {
@@ -108,12 +108,12 @@
 .box {
     border: 2px solid #F15A24;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
     margin: 20px auto;
     width: 80%;
-    max-width: 600px;
+    max-width: 400px;
     background-color: #ffffff;
-    margin-right: 40px;
+    margin-right: 140px;
     margin-bottom: 20px; /* Adjusted margin-bottom to reduce space */
   }
   
@@ -172,10 +172,15 @@
     margin-right: 30px;
   }
   
-.fourth-bar h1{
-    margin-left: 600px;
-    margin-top: -450px;
+  .section-title {
+    text-align: center; /* Center the text */
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 20px; /* Add some space below the title */
+    margin-top: -450px; /* Add some space above the title */
+    margin-left: 550px;
 }
+
 
 .fifth-bar h4 {
     margin-top: 90px;
@@ -337,8 +342,11 @@
   }
   
   .social-icons a {
+    color: #F2F2F3;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 20px; 
     display: inline-block;
-    margin-right: 10px;
   }
   
   .social-icons img {
