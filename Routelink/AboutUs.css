@@ -120,6 +120,7 @@
   .container {
     display: flex;
     justify-content: center;
+    background-color: #FCDED3;
   }
   
   .button-wrapper {
@@ -132,7 +133,7 @@
   }
   
   .tab-btn {
-    background-color: #F7A76D;
+    background-color: #FCDED3;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -312,6 +313,52 @@
     }
 }
 
+.banner {
+  display: flex;
+            align-items: center;
+            background-color: #ff6a00; /* Orange color */
+            padding: 20px 40px;
+            max-width: 60%; /* Adjust the maximum width as necessary */
+            margin: auto;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            position: relative; /* Position relative to allow absolute positioning of image */
+}
+.banner-text {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.banner-text h3 {
+  margin: 0;
+  font-size: 32px;
+  color: white;
+  margin-right: 20px; /* Space between text and image */
+  margin-bottom: 30px;
+}
+.banner img {
+  height: 200px; /* Adjust the height as necessary */
+ 
+  margin-right: 20px; /* Space between image and button */
+  position: absolute;
+  top: -50px; /* Move the image upwards */
+  right: 150px; /* Adjust as necessary */
+}
+.learn-more-button {
+  background-color: #4D4A4F; 
+  color: #F2F2F3;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px; 
+  transition: background-color 0.3s ease;
+  margin-bottom: 40px;
+}
+.learn-more-button:hover {
+  background-color: #F15A24; 
+}
+
 .footer {
     background-color: #212121;
     color: #ffffff;
@@ -370,7 +417,7 @@
   
   .gallery-images {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
   
