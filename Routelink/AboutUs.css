@@ -8,13 +8,13 @@
 .first-bar p {
     margin: 0;
     color: #F2F2F3;
-    font-size: 14px; /* Adjust the font size as needed */
+    font-size: 14px; 
 }
 .first-bar a {
     color: #F2F2F3;
     text-decoration: none;
     margin-left: 10px;
-    font-size: 20px; /* Adjust the font size of the icons */
+    font-size: 20px; 
 }
 .first-bar a:hover {
     text-decoration: underline;
@@ -26,30 +26,30 @@
 }
 .address-and-numbers p {
     margin: 0;
-    margin-right: 200px; /* Add margin to the right for spacing */
+    margin-right: 200px; 
 }
 .logo-image {
-    width: 100px; /* Adjust the width as needed */
-    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    width: 100px; 
+    height: auto; 
   }
   .second-bar {
-    background-color: rgba(77, 74, 79, 0.7); /* Grey transparent color */
+    background-color: rgba(77, 74, 79, 0.7); 
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Ensure it spans the full width */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    position: relative; /* Make the second-bar a positioning context */
-    z-index: 1; /* Ensure the second-bar is above the third-bar */
+    width: 100%; 
+    box-sizing: border-box; 
+    position: relative; 
+    z-index: 1; 
 }
 .logo-image {
-    max-height: 50px; /* Adjust as needed */
+    max-height: 50px; 
     width: auto;
 }
 .navigation {
     display: flex;
-    gap: 15px; /* Space between nav items */
+    gap: 15px; 
 }
 .navigation a {
     color: #fff;
@@ -66,7 +66,7 @@
     align-items: center;
 }
 .contact-info img {
-    max-height: 30px; /* Adjust as needed */
+    max-height: 30px; 
     width: auto;
     margin-right: 10px;
 }
@@ -76,15 +76,15 @@
 }
 .third-bar {
     position: relative;
-    overflow: hidden; /* Ensure content doesn't overflow */
+    overflow: hidden;
 }
 .background-image img {
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    max-height: 300px; /* Adjust the maximum height as needed */
-    object-fit: cover; /* Prevent stretching and maintain aspect ratio */
+    max-height: 300px;
+    object-fit: cover; 
     z-index: -1;
     filter: brightness(60%);
 }
@@ -93,10 +93,10 @@
     margin: 0;
     color: #F2F2F3;
     position: absolute;
-    left: 20px; /* Adjust left positioning as needed */
-    font-size: 36px; /* Adjust font size as needed */
-    top: 20px; /* Adjust top positioning as needed */
-    width: calc(100% - 40px); /* Adjust width to account for padding */
+    left: 20px; 
+    font-size: 36px; 
+    top: 20px; 
+    width: calc(100% - 40px); 
     margin-left: 90px;
     margin-top: 90px;
 }
@@ -168,7 +168,7 @@
     width: 80%;
     max-width: 600px;
     line-height: 1.6;
-    text-align: center; /* Centering the text */
+    text-align: center; 
     margin-right: 30px;
   }
   
@@ -187,25 +187,25 @@
 }
 
 .managers {
-    display: flex;           /* Use flexbox to align images in a row */
-    justify-content: center; /* Center the images horizontally */
-    align-items: center;     /* Center the images vertically */
-    gap: 30px;               /* Space between the images */
-    margin: 20px 0;          /* Optional: add some margin above and below the container */
+    display: flex;           
+    justify-content: center; 
+    align-items: center;    
+    gap: 30px;               
+    margin: 20px 0;          
 }
 
 .manager {
     position: relative;
-    width: 250px;           /* Adjust the width to the desired size */
-    height: auto;           /* Maintain the aspect ratio */
+    width: 250px;           
+    height: auto;           
 }
 
 .manager img {
-    width: 100%;            /* Full width of the parent container */
-    height: auto;           /* Maintain the aspect ratio */
-    object-fit: cover;      /* Ensure images cover the area without distortion */
-    border-radius: 5px;     /* Optional: add rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+    width: 100%;            
+    height: auto;          
+    object-fit: cover;      
+    border-radius: 5px;    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .overlay {
@@ -213,15 +213,15 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.7); 
     height: 0;
     overflow: hidden;
-    transition: 0.5s ease; /* Smooth transition */
-    border-radius: 0 0 5px 5px; /* Match the border radius of the image */
+    transition: 0.5s ease;
+    border-radius: 0 0 5px 5px; 
 }
 
 .manager:hover .overlay {
-    height: 100%; /* Expand the overlay to cover the whole image */
+    height: 100%; 
 }
 
 .text {
@@ -235,10 +235,10 @@
 }
 
 .custom-hr {
-    border: none; /* Remove default border */
-    height: 2px;  /* Set the height of the line */
-    background-color: #F15A24; /* Set the color of the line */
-    margin: 20px 0; /* Adjust the top and bottom margins */
+    border: none; 
+    height: 2px;  
+    background-color: #F15A24; 
+    margin: 20px 0; 
     margin-top: 70px;
 }
 .partners {
@@ -247,7 +247,7 @@
 }
 
 .partners-heading {
-    color: #f15a24; /* Orange color for "Partners" */
+    color: #f15a24; 
     font-size: 24px;
     margin-bottom: 10px;
 }
