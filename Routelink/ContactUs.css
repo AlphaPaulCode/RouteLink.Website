@@ -48,12 +48,12 @@ a:hover {
     z-index: 2; 
 }
 
-#sub-nav {
+/* #sub-nav {
     position: relative;
     z-index: 2; 
     transform: translateX(400%);
     white-space: nowrap;
-}
+} */
 
 #contact-session {
     padding-top: 80px;
@@ -64,7 +64,7 @@ a:hover {
     align-items: center;
     gap: 25px;
     margin: 0 auto;
-    width: 75%;
+    /* width: 75%; */
     /* padding-left: 100px;
     padding-right: 200px; */
 }
