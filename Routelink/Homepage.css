@@ -60,7 +60,7 @@
     transition: background-color 0.3s;
 }
 .navigation a:hover {
-    background-color: #F15A24;
+    color: #F15A24;
     border-radius: 5px;
 }
 .contact-info {
