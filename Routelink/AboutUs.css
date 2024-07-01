@@ -140,6 +140,7 @@
   width: 80%;
   max-width: 400px;
   background-color: #ffffff;
+  
 }
 .container {
   display: flex;
@@ -185,6 +186,7 @@
   width: 80%;
   max-width: 600px;
   line-height: 1.6;
+  margin-left: 400px;
 }
 
 
@@ -198,11 +200,13 @@
 }
 
 .managers {
-    display: flex;           
-    justify-content: center; 
-    align-items: center;    
-    gap: 30px;               
-    margin: 20px 0;          
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px 10px; 
+  justify-items: center; 
+  align-items: start; 
+  margin: 20px ; 
+  margin-top: 70px;          
 }
 
 .manager {
