@@ -37,6 +37,7 @@
 .logo-image {
   max-height: 30px;
   width: auto;
+  margin-left: 40px;
 }
   .second-bar {
     background-color: rgba(77, 74, 79, 0.7); 
@@ -66,6 +67,7 @@
 .contact-info {
     display: flex;
     align-items: center;
+    margin-right: 40px;
 }
 .contact-info img {
     max-height: 30px; 

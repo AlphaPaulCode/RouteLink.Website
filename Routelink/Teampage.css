@@ -25,6 +25,11 @@
 .first-bar a:hover {
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+  .first-bar {
+      display: none;
+  }
+}
 .address-and-numbers {
     display: flex;
     justify-content: space-between;
@@ -37,6 +42,7 @@
 .logo-image {
   max-height: 30px;
   width: auto;
+  margin-left: 40px;
 }
   .second-bar {
     background-color: rgba(77, 74, 79, 0.7); 
@@ -66,6 +72,7 @@
 .contact-info {
     display: flex;
     align-items: center;
+    margin-right: 40px;
 }
 .contact-info img {
     max-height: 30px; 
@@ -80,6 +87,33 @@
     margin: 0;
     color: #fff;
     font-size: small;
+}
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .navigation, .contact-info {
+      display: none;
+  }
+  .menu-icon {
+      display: block;
+  }
+  .navigation.mobile-active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      background-color: rgba(77, 74, 79, 0.9);
+      width: 100%;
+      padding: 10px;
+  }
+  .navigation.mobile-active a {
+      padding: 10px 0;
+  }
 }
 .third-bar {
     position: relative;
@@ -102,10 +136,14 @@
     position: absolute;
     left: 20px; 
     font-size: 36px; 
-    top: 20px; 
-    width: calc(100% - 40px); 
-    margin-left: 90px;
+    top: 20px;  
+    margin-left: 30px;
     margin-top: 90px;
+}
+@media (max-width :768px){
+  .background-image h1 {
+    font-size: 24px;
+  }
 }
 .managers{
     display: grid; 
@@ -155,6 +193,13 @@
     left: 20px;
     right: 20px;
     text-align: center;
+}
+@media (max-width :768px){
+  .manager {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .custom-hr {
@@ -361,3 +406,51 @@
   .footer-bottom a:hover {
     text-decoration: underline;
   }
+  /* Media query for responsiveness */
+@media (max-width: 768px) {
+  .footer-container {
+      grid-template-columns: 1fr;
+  }
+
+  .about-text {
+      display: none;
+  }
+
+  .connect-text {
+      display: block;
+  }
+
+  .social-icons {
+      margin-top: 20px;
+  }
+
+  .newsletter form {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .newsletter input[type="email"],
+  .newsletter button {
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .send-button {
+      padding: 10px;
+      width: auto;
+  }
+
+  .send-button span {
+      display: none;
+  }
+
+  .send-button .fa-paper-plane {
+      margin-left: 0;
+  }
+}
+
+@media (max-width: 768px){
+  .partners h2 {
+      font-size: 15px;
+}
+}
